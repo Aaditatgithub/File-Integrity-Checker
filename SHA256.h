@@ -1,4 +1,4 @@
-#ifndef SHA256_H
+#ifdef SHA256_H
 #define SHA256_H
 
 #include <cstdio>
@@ -138,5 +138,5 @@ void sha256(const uint8_t* message, size_t message_length, uint32_t hash[8]) {
     sha256_final(hash, buffer, message_length % 64, message_length * 8);
 }
 
-#endif // !SHA256_H
+#endif // SHA256_H
 
